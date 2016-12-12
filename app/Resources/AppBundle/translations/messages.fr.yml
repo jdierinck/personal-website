@@ -1,0 +1,56 @@
+Over mij: A propos
+Aanbod: Services
+Competenties: Compétences
+Certificaten: Certificats
+Contact: Contact
+Freelance web developer: Développeur web indépendant
+'Voornaamste expertise: websites en applicaties op basis van PHP en afgeleide CMS-systemen en frameworks': "Domaine d'expertise principal: sites et applications basés sur PHP et les CMS et frameworks qui en découlent"
+Symfony 2.3 Advanced Certified Developer en liefhebber van het Symfony framework: Développeur Symfony 2.3 Avancé Certifié et amateur du framework Symfony
+Vier jaar professionele ervaring met Drupal, vnl. intra- en extranetten: Quatre ans d'expérience professionnelle avec des solutions basées sur Drupal (intranets, extranets)
+Bedreven in het verwerven van nieuwe vaardigheden door ervaring en zelfstudie: Habile à acquérir de nouvelles compétences par expérience et étude personnelle
+Gepassioneerd door webtechnologieën en het verwerven van nieuwe inzichten en kennis: Passionné par les technologies web et l'acquisition de nouvelles connaissances dans ce domaine
+Gedreven en ambitieus om vooropgestelde doelstellingen te behalen: Dévoué à atteindre les objectifs fixés
+Aangeboren neiging (afwijking?) om naar verbetering te streven: Disposition naturelle à aspirer à l'amélioration
+Wat kan ik voor u doen?: Que puis-je faire pour vous?
+Concept: Conception
+bestek: cahier des charges
+scenario's & wireframes: scénarios et wireframes
+planning & scope: planning
+Ontwikkeling: Développement
+dynamische sites en applicaties (PHP): sites et applications dynamiques (PHP)
+opzetten van content management systemen (CMS): mise en place de systèmes de gestion de contenu (CMS)
+ontwikkeling van modules voor CMS-systemen: développement de modules pour CMS
+Deployment: Deploiement
+hosting: solutions d'hébergement
+registratie van domeinnamen: régistration de noms de domaines
+configuratie van DNS-instellingen: configurations DNS
+Support: Support
+ondersteuning van gebruikers: support d'utilisateurs
+updates van bestaande websites: mises à jour de sites existants
+troubleshooting: troubleshooting
+Skills: Skills
+Volledig overzicht: Aperçu détaillé
+Verberg details: Cacher détails
+Opleidingen & certificaten: Formations et certificats
+Symfony Certified Developer (Sensiolabs) · augustus 2016: Symfony Certified Developer (Sensiolabs) · août 2016
+Certified jQuery developer (W3Schools) · maart 2014: Certified jQuery developer (W3Schools) · mars 2014
+Certified JavaScript developer (W3Schools) · maart 2014: Certified JavaScript developer (W3Schools) · mars 2014
+Certified PHP developer (W3Schools) · maart 2014: Certified PHP developer (W3Schools) · mars 2014
+Drupal developer (Syntra AB) · oktober 2013 - juni 2014: Drupal developer (Syntra AB) · octobre 2013 - juin 2014
+HTML5, CSS3 & the responsive web (Syntra West) · oktober 2013: HTML5, CSS3 & the responsive web (Syntra West) · octobre 2013
+'Drupal advanced: fields & views (Syntra AB) · april 2013': 'Drupal advanced: fields & views (Syntra AB) · avril 2013'
+Download mijn CV: Téléchargez mon CV
+Contacteer mij: Contactez-moi
+Adres: Adresse
+E-mail: Courriel
+GSM: GSM
+Web: Web
+form:
+  contact:
+    name: Nom
+    email: Courriel
+    subject: Sujet
+    message: Message
+    send: Envoyer
+    honeypot: Ce champ doit être vide
+'<strong>Bedankt!</strong> Ik neem zo snel mogelijk contact met je op.': '<strong>Merci pour votre message!</strong> Je vous contacte dans les plus brefs délais.'

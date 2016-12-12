@@ -1,0 +1,8 @@
+form:
+  contact:
+    name: Naam
+    email: E-mail
+    subject: Onderwerp
+    message: Bericht
+    send: Verstuur
+    honeypot: Vul dit veld niet in
