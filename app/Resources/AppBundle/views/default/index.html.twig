@@ -131,7 +131,7 @@
 			<a href="http://www.symfony.com"><img src="{{ asset('images/symfony_white_03.png') }}" alt="Symfony" height="51"></a><br>
 			<h4 class="skill">Symfony 2.X</h4>
 				<div class="progress">
-					<div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width:92%">92%</div>
+					<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%</div>
 				</div>			
 	  	</div>
 	  </div>
@@ -164,11 +164,11 @@
 	  	{% set skills = { 
 	  		'PHP' : 90,
 	  		'OOP' : 90,
-	  		'Symfony 2.x' : 92,
+	  		'Symfony 2.x' : 90,
 	  		'Twig' : 90,
 	  		'Doctrine ORM' : 85,
 	  		'MySQL' : 85,
-	  		'Apache' : 80,
+	  		'Apache' : 75,
 	  		'Javascript' : 75,
 	  		'jQuery' : 80,
 	  		'Angular JS' : 10,
@@ -178,10 +178,11 @@
 	  		'SEO' : 70,
 	  		'Symfony CMF' : 40,
 	  		'CMS: Drupal' : 80,
-	  		'HTML/CSS' : 95,
+	  		'HTML/CSS' : 90,
+	  		'Bootstrap' : 85,
 	  		'Command line' : 75,
-	  		'PHPUnit': 65,
-	  		'Git' : 75,
+	  		'PHPUnit': 60,
+	  		'Git' : 80,
 	  		'Mac OS X' : 95,
 	  		'Linux' : 40,
 	  		'Windows' : 80,
@@ -262,7 +263,7 @@
 	</div>
 	
 	<footer class="container-fluid bg-5 text-center">
-		<a href="https://github.com/jdierinck">
+		<a href="https://github.com/jdierinck" target="_blank">
 			<i class="fa fa-github fa-2x" aria-hidden="true"></i>
 		</a>
 		<a href="#overmij" title="To Top">
@@ -299,13 +300,15 @@ $("#myNavbar a").on('click', function(event) {
 
 });
 
-// Show hidden div
+
 $(document).ready(function(){
+	// Show hidden div
 	$('#showdetails').click(function(event){
 		event.preventDefault();
 		$('#teaser').hide();
 		$('#details').show();
 	});
+	// hide details
 	$('#hidedetails').click(function(event){
 		event.preventDefault();
 		$('#details').hide();
