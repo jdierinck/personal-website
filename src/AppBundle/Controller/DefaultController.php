@@ -63,7 +63,7 @@ class DefaultController extends Controller
 				->setBody(
 					$this->renderView(
 						// appBundle/views/emails/contact.html.twig
-						'AppBundle:Emails:contact.html.twig',
+						'AppBundle:emails:contact.html.twig',
 						array('data' => $data)
 						),
 						'text/html'
@@ -92,7 +92,7 @@ class DefaultController extends Controller
 			return $this->redirectToRoute('homepage'); 
 		}
 
-		return $this->render('AppBundle:Default:index.html.twig', array('form' => $form->createView()));    
+		return $this->render('AppBundle:default:index.html.twig', array('form' => $form->createView()));    
         // replace this example code with whatever you need
 //         return $this->render('default/index.html.twig', array(
 //             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
