@@ -9,30 +9,26 @@ h1.blue {
 
 p {font-size: 16px;}
 
-.bg-1 { 
-    /* background-color: #428bca;; /* Blue */
-    /* color: #f5f6f7; */
+.bg-1 {
+    background-color: #ffffff; /* White */
 }
-.bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
+.bg-2 {
+	background-color: #0d2d5e; /* Dark blue */
+	color: #fff;
 }
 .bg-3 { 
-    background-color: #ffffff; /* White */
-    /* color: #555555; */
+    background-color: #474e5d; /* Gray */
+    color: #ffffff;
 }
 .bg-4 {
-	background-color: #428bca;
+	background-color: #428bca; /* Blue */
     color: #ffffff;
 }
 .bg-5 {
-	background-color: #2f2f2f;
+	background-color: #2f2f2f; /* Black */
     color: #ffffff;
 }
-.bg-6 {
-	background-color: #0d2d5e;
-	color: #fff;
-}
+
 
 .icon {
 	font-size: 60px;
@@ -178,6 +174,6 @@ li.myCustomLi:before {
 }
 
 footer .glyphicon {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 40px;
 }
