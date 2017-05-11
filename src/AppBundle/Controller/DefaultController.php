@@ -92,11 +92,10 @@ class DefaultController extends Controller
 			return $this->redirectToRoute('homepage'); 
 		}
 
+		// TO DO: log form errors
+
 		return $this->render('AppBundle:default:index.html.twig', array('form' => $form->createView()));    
-        // replace this example code with whatever you need
-//         return $this->render('default/index.html.twig', array(
-//             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
-//         ));
+
     }
     
 }

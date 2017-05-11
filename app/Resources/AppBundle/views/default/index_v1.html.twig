@@ -1,0 +1,325 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid text-center" style="padding-top:0;padding-bottom:0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a href="#" class="navbar-brand"><strong>Johan Dierinck</strong></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav nav-text">
+					<li><a href="#overmij">{% trans %}Over mij{% endtrans %}</a></li>
+					<li><a href="#diensten">{% trans %}Aanbod{% endtrans %}</a></li>
+					<li><a href="#skills">{% trans %}Competenties{% endtrans %}</a></li>
+					<li><a href="#opleidingen">{% trans %}Certificaten{% endtrans %}</a></li>
+					<li><a href="#contact">{% trans %}Contact{% endtrans %}</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li {% if app.request.getLocale() == 'nl' %}class="lang-active"{% endif %}><a href="/nl">NL</a></li>
+					<li {% if app.request.getLocale() == 'en' %}class="lang-active"{% endif %}><a href="/en">EN</a></li>
+					<li {% if app.request.getLocale() == 'fr' %}class="lang-active"{% endif %}><a href="/fr">FR</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid bg-1 text-center" id="overmij">
+		<h1 class="blue">{% trans %}Over mij{% endtrans %}</h1>
+		<div class="row">
+			<div class="col-sm-3">
+			<img src="{{ asset('images/IMG_1350.jpg') }}" class="img-responsive img-circle" style="display:inline;max-width:40%" alt="Johan Dierinck">
+			</div>
+			<div class="col-sm-9">
+			<ul class="text-left myCustomUl">
+				<li class="myCustomLi">{% trans %}Freelance web developer{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Voornaamste expertise: websites en applicaties op basis van PHP en afgeleide CMS-systemen en frameworks{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Symfony 2.3 Advanced Certified Developer en liefhebber van het Symfony framework{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Vier jaar professionele ervaring met Drupal, vnl. intra- en extranetten{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Bedreven in het verwerven van nieuwe vaardigheden door ervaring en zelfstudie{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Gepassioneerd door webtechnologieën en het verwerven van nieuwe inzichten en kennis{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Gedreven en ambitieus om vooropgestelde doelstellingen te behalen{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Aangeboren neiging (afwijking?) om naar verbetering te streven{% endtrans %}</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-2 text-center" id="diensten">
+		<h1>{% trans %}Wat kan ik voor u doen?{% endtrans %}</h1>
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-3">
+				<div class="icon">
+					<span class="glyphicon glyphicon-list-alt"></span>
+				</div>
+			<h3 class="underline">{% trans %}Concept{% endtrans %}</h3>
+			<ul class="text-left">
+				<li>{% trans %}bestek{% endtrans %}</li>
+				<li>{% trans %}scenario's & wireframes{% endtrans %}</li>
+				<li>{% trans %}planning & scope{% endtrans %}</li>
+			</ul>
+			</div>
+			<div class="col-sm-3">
+				<div class="icon">
+					<span class="glyphicon glyphicon-console"></span>
+				</div>			
+			<h3 class="underline">{% trans %}Ontwikkeling{% endtrans %}</h3>
+			<ul class="text-left">
+				<li>{% trans %}dynamische sites en applicaties (PHP){% endtrans %}</li>
+				<li>{% trans %}opzetten van content management systemen (CMS){% endtrans %}</li>
+				<li>{% trans %}ontwikkeling van modules voor CMS-systemen{% endtrans %}</li>				
+			</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-3">
+				<div class="icon">
+					<span class="glyphicon glyphicon-dashboard"></span>
+				</div>			
+			<h3 class="underline">{% trans %}Deployment{% endtrans %}</h3>
+			<ul class="text-left">
+				<li>{% trans %}hosting{% endtrans %}</li>
+				<li>{% trans %}registratie van domeinnamen{% endtrans %}</li>
+				<li>{% trans %}configuratie van DNS-instellingen{% endtrans %}</li>
+			</ul>			
+			</div>
+			<div class="col-sm-3">
+				<div class="icon">
+					<span class="glyphicon glyphicon-wrench"></span>
+				</div>			
+			<h3 class="underline">{% trans %}Support{% endtrans %}</h3>
+			<ul class="text-left">
+				<li>{% trans %}ondersteuning van gebruikers{% endtrans %}</li>
+				<li>{% trans %}updates van bestaande websites{% endtrans %}</li>
+				<li>{% trans %}troubleshooting{% endtrans %}</li>
+			</ul>			
+			</div>			
+		</div>
+	</div>
+
+	<div class="container-fluid bg-3 text-center" id="skills">
+	  <h1>{% trans %}Competenties{% endtrans %}</h1>
+	  <div id="teaser">
+	  <div class="row">
+	  	<div class="col-md-2 col-md-offset-3">
+			<a href="http://php.net"><img src="{{ asset('images/php-med-trans.png') }}" alt="PHP"></a><br>
+			<h4 class="skill">PHP</h4>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%</div>
+				</div>
+	  	</div>
+	  	<div class="col-md-2">
+			<a href="http://www.mysql.com"><img src="{{ asset('images/powered-by-mysql-167x86.png') }}" alt="MySQL" height="51"></a><br>
+			<h4 class="skill">MySQL</h4>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+				</div>			
+	  	</div>
+	  	<div class="col-md-2">
+			<a href="http://www.symfony.com"><img src="{{ asset('images/symfony_white_03.png') }}" alt="Symfony" height="51"></a><br>
+			<h4 class="skill">Symfony 2.X</h4>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">90%</div>
+				</div>			
+	  	</div>
+	  </div>
+	  <div class="row">
+	  	<div class="col-md-2 col-md-offset-3">
+			<a href="http://drupal.org"><img src="{{ asset('images/druplicon-small.png') }}" alt="Drupal" height="51"></a><br>
+			<h4 class="skill">CMS: Drupal</h4>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80%</div>
+				</div>			
+	  	</div>
+	  	<div class="col-md-2">
+			<a href="http://jquery.com"><img src="{{ asset('images/jQuery-Logo_On_Dark.png') }}" alt="jQuery" height="51"></a><br>
+			<h4 class="skill">jQuery</h4>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80%</div>
+				</div>			
+	  	</div>
+	  	<div class="col-md-2">
+			<a href="http://getbootstrap.com"><img src="{{ asset('images/bootstrap-solid.svg') }}" alt="Bootstrap" height="51"></a><br>
+			<h4 class="skill">Frontend: Bootstrap</h4>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">85%</div>
+				</div>			
+	  	</div>
+	  </div>
+	  <a href="#" class="btn btn-primary btn-lg" id="showdetails">{% trans %}Volledig overzicht{% endtrans %}</a>
+	</div>
+	<div id="details" style="display:none">
+	  	{% set skills = { 
+	  		'PHP' : 90,
+	  		'OOP' : 90,
+	  		'Symfony 2.x' : 90,
+	  		'Twig' : 90,
+	  		'Doctrine ORM' : 85,
+	  		'MySQL' : 85,
+	  		'Apache' : 75,
+	  		'Javascript' : 75,
+	  		'jQuery' : 80,
+	  		'Angular JS' : 30,
+	  		'Ajax' : 90,
+	  		'Cache' : 75,
+	  		'JSON' : 80,
+	  		'SEO' : 70,
+	  		'Symfony CMF' : 40,
+	  		'CMS: Drupal' : 80,
+	  		'HTML/CSS' : 90,
+	  		'Bootstrap' : 85,
+	  		'Command line' : 75,
+	  		'PHPUnit': 60,
+	  		'Git' : 80,
+	  		'Mac OS X' : 95,
+	  		'Linux' : 40,
+	  		'Windows' : 80,
+	  	} %}
+	  	{% for row in skills|batch(4) %}
+	  		<div class="row">
+	  			{% for key, value in row %}
+	  			<div class="col-sm-2 {% if loop.first %}col-sm-offset-2{% endif %}">
+	  				<h4 class="skill">{{ key }}</h4>
+	  				<div class="progress">
+						<div class="progress-bar {% if value < 25 %}progress-bar-danger{% elseif value <50 %}progress-bar-warning{% elseif value >= 90 %}progress-bar-success{% endif %}" role="progressbar" aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ value }}%">{{ value }}%</div>
+					</div>	
+	  			</div>
+	  			{% endfor %}
+	  		</div>
+	  	{% endfor %} 
+	  	<a href="#" class="btn btn-primary btn-lg" id="hidedetails">{% trans %}Verberg details{% endtrans %}</a>
+	</div>
+	</div>
+
+	<div class="container-fluid bg-1 text-center" id="opleidingen">
+		<h1 class="blue">{% trans %}Opleidingen & certificaten{% endtrans %}</h1>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-left">
+				<ul class="myCustomUl">
+				<li class="myCustomLi">{% trans %}Symfony Certified Developer (Sensiolabs) · augustus 2016{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}PHP advanced (Syntra AB) · mei - juni 2015{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Certified jQuery developer (W3Schools) · maart 2014{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Certified JavaScript developer (W3Schools) · maart 2014{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Certified PHP developer (W3Schools) · maart 2014{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Drupal developer (Syntra AB) · oktober 2013 - juni 2014{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}HTML5, CSS3 & the responsive web (Syntra West) · oktober 2013{% endtrans %}</li>
+				<li class="myCustomLi">{% trans %}Drupal advanced: fields & views (Syntra AB) · april 2013{% endtrans %}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-2 text-center" id="cv">
+		<h1></h1>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<a href="{{ asset('documents/CV JDierinck.pdf') }}" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-download-alt"></span> {% trans %}Download mijn CV{% endtrans %}</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-4 text-center" id="contact">
+	  <h1>{% trans %}Contacteer mij{% endtrans %}</h1>
+	  <div class="row">
+	  	<div class="col-sm-5 col-sm-offset-2 text-left">
+			{% for flash_message in app.session.flashBag.get('notice') %}
+				<div class="alert alert-success alert-dismissible">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					{{ flash_message|raw }}
+				</div>
+			{% endfor %}
+	  		
+	  		{{ form_start(form) }}
+			{{ form_widget(form) }}
+			{{ form_end(form) }}
+	  	</div>
+	  	<div class="col-sm-5 text-left">
+	  		<!-- <h5 class="text-uppercase">{% trans %}Adres{% endtrans %}</h5> -->
+	  		<p><span class="glyphicon glyphicon-map-marker"></span> 2890 Sint-Amands, {% trans %}België{% endtrans %}</p>
+	  		<!-- <p>{% trans %}België{% endtrans %}</p> -->
+	  		<!-- <h5 class="text-uppercase">{% trans %}E-mail{% endtrans %}</h5> -->
+	  		<p><span class="glyphicon glyphicon-envelope"></span> johan.dierinck@gmail.com</p>
+	  		<!-- <h5 class="text-uppercase">{% trans %}GSM{% endtrans %}</h5> -->
+	  		<p><span class="glyphicon glyphicon-phone"></span> +32 479 55 14 04</p>
+	  		<!-- <h5 class="text-uppercase">{% trans %}Web{% endtrans %}</h5> -->
+	  		<p><span class="glyphicon glyphicon-globe"></span> www.jdierinck.be</p>
+	  	</div>
+
+	  </div>
+	</div>
+	
+	<footer class="container-fluid bg-5 text-center">
+		<p>
+		<a href="#overmij" title="To Top">
+<!--     		<span class="glyphicon glyphicon-chevron-up"></span> -->
+			<span class="fa-stack fa-lg">
+			<i class="fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+    		<i class="fa fa-angle-up fa-stack-1x" aria-hidden="true"></i>
+    		</span>
+  		</a>
+  		</p>
+  		<br>
+		<a href="https://github.com/jdierinck" target="_blank">
+			<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+		</a>
+		&nbsp;
+		<a href="http://www.linkedin.com/in/johandierinck" target="_blank">
+			<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+		</a>
+		<p></p>
+		<p>&copy {{ "now"|date("Y") }} Johan Dierinck</p>
+		<p class="small">Made with <img src="{{ asset('images/symfony_white_02.png') }}" alt="Symfony logo" height="15"></p>
+	</footer>
+	
+<script>
+// Add smooth scrolling on all links inside the navbar
+$("#myNavbar a").on('click', function(event) {
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+    // Store hash
+    var hash = this.hash;
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+    // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
+
+});
+
+
+$(document).ready(function(){
+	// Show hidden div
+	$('#showdetails').click(function(event){
+		event.preventDefault();
+		$('#teaser').hide();
+		$('#details').show();
+	});
+	// hide details
+	$('#hidedetails').click(function(event){
+		event.preventDefault();
+		$('#details').hide();
+		$('#teaser').show();
+	});
+});
+</script>	
+	
+</body>
+{% endblock %}
