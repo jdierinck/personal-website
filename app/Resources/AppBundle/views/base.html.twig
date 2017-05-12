@@ -40,16 +40,16 @@
 		<!-- Google Analytics -->
 		<!-- GA opt out cookie -->
 		<script>
-			if (location.search) {
-				// Set to the same value as the web property used on the site
-				var gaProperty = 'UA-98870710-1';
+			// Set to the same value as the web property used on the site
+			var gaProperty = 'UA-98870710-1';
+			var disableStr = 'ga-disable-' + gaProperty;
 
+			if (location.search) {
 				// Since location.search == true, grab the parameter
 				var param = location.search.split("param=")[1];
 				 
 				// Verify that the url is like http://example.com?param=true
 				// and create opt-out cookie
-				var disableStr = 'ga-disable-' + gaProperty;
 				if (param) {
 					document.cookie = disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
 					window[disableStr] = true;
