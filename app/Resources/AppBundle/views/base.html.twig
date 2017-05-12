@@ -12,10 +12,10 @@
         <title>{% block title %}Johan Dierinck{% endblock %}</title>
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-        <link href="http://jdierinck.be/" rel="canonical">
-		<link rel="alternate" hreflang="x-default" href="http://jdierinck.be/">
-		<link rel="alternate" hreflang="en" href="http://jdierinck.be/en/">
-		<link rel="alternate" hreflang="fr" href="http://jdierinck.be/fr/">
+        <link href="http://www.jdierinck.be/" rel="canonical">
+		<link rel="alternate" hreflang="x-default" href="http://www.jdierinck.be/">
+		<link rel="alternate" hreflang="en" href="http://www.jdierinck.be/en/">
+		<link rel="alternate" hreflang="fr" href="http://www.jdierinck.be/fr/">
 
         <!-- Bootstrap css -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -38,6 +38,31 @@
 		<!-- Bootstrap js-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- Google Analytics -->
+		<!-- GA opt out cookie -->
+		<script>
+			if (location.search) {
+				// Set to the same value as the web property used on the site
+				var gaProperty = 'UA-98870710-1';
+
+				// Since location.search == true, grab the parameter
+				var param = location.search.split("param=")[1];
+				 
+				// Verify that the url is like http://example.com?param=true
+				// and create opt-out cookie
+				var disableStr = 'ga-disable-' + gaProperty;
+				if (param) {
+					document.cookie = disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
+					window[disableStr] = true;
+				}
+			}
+
+			// Disable tracking if the opt-out cookie exists.
+			if (document.cookie.indexOf(disableStr + '=true') > -1) {
+			  window[disableStr] = true;
+			}
+
+			</script>
+		<!-- GA tracking script -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
