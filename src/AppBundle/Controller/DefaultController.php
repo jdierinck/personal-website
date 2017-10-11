@@ -58,7 +58,8 @@ class DefaultController extends Controller
 			// Send e-mail to myself
 			$message = \Swift_Message::newInstance()
 				->setSubject($data['subject'])
-				->setFrom($data['email'])
+				//->setFrom($data['email'])
+				->setFrom('info@jdierinck.webfactional.com')
 				->setTo('johan.dierinck@telenet.be')
 				->setBody(
 					$this->renderView(
