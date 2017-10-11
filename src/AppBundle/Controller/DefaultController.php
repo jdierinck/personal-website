@@ -82,6 +82,10 @@ class DefaultController extends Controller
 			;
 			$this->get('mailer')->send($message);			
 			
+			//Log message to file
+			$file = $this->container->getParameter('kernel.root_dir').'/logs/mails.txt';
+			file_put_contents($file, $message, FILE_APPEND);
+			
 			// add flash message
 			$translator = $this->get('translator');
 			
