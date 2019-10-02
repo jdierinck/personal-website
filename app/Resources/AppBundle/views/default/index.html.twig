@@ -17,7 +17,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="white">Johan Dierinck</h1>
-					<h3 class="white"><span class="rotate">PHP developer, Symfony certified</span></h3>
+					<h3 class="white"><span class="rotate">PHP developer, Drupal aficionado, Symfony certified</span></h3>
 				</div>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 			<div class="row">
 				<div class="col-md-12 headline">
 					<h2>Johan Dierinck</h2>
-					<p>PHP developer. Symfony certified.</p>
+					<p>PHP developer. Drupal aficionado. Symfony certified.</p>
 				</div>
 				<div class="col-md-3 hidden-sm hidden-xs">
 					<img src="{{ asset('images/IMG_1350.jpg') }}" class="img-responsive img-circle" style="margin-bottom: 20px">
@@ -75,22 +75,23 @@
 					<p><a href="{{ asset('documents/CVJDierinck.pdf') }}" class="btn btn-primary btn-md" onclick="ga('send', 'event', 'CV', 'download');"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;{% trans %}Download mijn CV{% endtrans %}</a></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
+				{% set expertise = {
+								'PHP': 90,
+								'MySQL': 80,
+								'Symfony': 85,
+								'Drupal': 85,
+								'Javascript & jQuery': 75
+					 } %}
 					<h3>Expertise</h3>
-					<h6 class="progress-title">PHP & MySQL</h6>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"><span>80%</span></div>
-					</div>
-					<h6 class="progress-title">Symfony</h6>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%"><span>85%</span></div>
-					</div>
-					<h6 class="progress-title">Drupal</h6>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"><span>80%</span></div>
-					</div>
-					<h6 class="progress-title">Javascript & jQuery</h6>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%"><span>75%</span></div>
+					<div id="expertise-preview">
+					 {% for key, value in expertise|slice(0, 5) %}
+						<h6 class="progress-title">{{ key }}</h6>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ value }}%">
+								<span>{{ value }}%</span>
+							</div>
+						</div>
+					 {% endfor %}
 					</div>
 					<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" onclick="ga('send', 'event', 'expertise', 'view');">Volledig overzicht</button>
 					<!-- Modal -->
@@ -103,26 +104,27 @@
 					      </div>
 					      <div class="modal-body">
 					      	<h4>Back-end development</h4>
-							<ul>
-								<li>PHP</li>
-								<li>PHP frameworks: Symfony 2.x</li>
-								<li>Templating: Twig</li>
-								<li>SQL: MySQL</li>
-								<li>ORM: Doctrine</li>
-								<li>Testing: PHPUnit</li>
-								<li>Versioning: Git</li>
-								<li>Content management frameworks: Symfony CMF, Drupal</li>
-								<li>Dependency management: Composer</li>
-							</ul>
-							<h4>Front-end</h4>
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>Javascript: vanilla Javascript, jQuery, Ajax,  Angular JS</li>
-								<li>Frameworks: Bootstrap</li>
-								<li>SEO</li>
-								<li>Dependency management: NPM, Bower</li>
-							</ul>
+									<ul>
+										<li>PHP</li>
+										<li>PHP frameworks: Symfony</li>
+										<li>Templating: Twig</li>
+										<li>SQL: MySQL</li>
+										<li>ORM: Doctrine</li>
+										<li>Testing: PHPUnit</li>
+										<li>Versioning: Git</li>
+										<li>Content management frameworks: Symfony CMF, Drupal</li>
+										<li>Dependency management: Composer</li>
+										<li>Virtualisation: Vagrant, Docker</li>
+									</ul>
+									<h4>Front-end</h4>
+									<ul>
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>Javascript: vanilla Javascript, Typescript, jQuery, Ajax,  Angular JS</li>
+										<li>Frameworks: Bootstrap</li>
+										<li>SEO</li>
+										<li>Dependency management: NPM, Bower</li>
+									</ul>
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-default" data-dismiss="modal">Sluit</button>
