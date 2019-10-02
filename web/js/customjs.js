@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+
 	/*
 	Text rotator
 	*/
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	});
 
 	// Parallax function
-	var parallax_animation = function() { 
+	var parallax_animation = function() {
 		$('.parallax').each( function(i, obj) {
 			var speed = $(this).attr('parallax-speed');
 			if( speed ) {
@@ -64,7 +64,7 @@ $(document).ready(function() {
 	});
 
 
-	$('.portfolio-item').on('click',function(){
+	$('.portfolio-item').on('click', function () {
 		$('#pf-detail').modal();
 		var description = $(this).find('.portfolio-item-description-detail').html();
 		var title = $(this).find('.portfolio-item-description h4').html();
@@ -84,28 +84,38 @@ $(document).ready(function() {
 
 	// Initialize Owl carousel on modal open event
 	$("#pf-detail").on('shown.bs.modal', function () {
-		$(".owl-carousel").owlCarousel({
+		console.log(this);
+		$(this).find('#portfolio-item-description-detail-carousel').owlCarousel({
 			loop:false,
-		    margin:10,
-		    items:1,
-		    autoplay:true,
-		    autoplayTimeout:4000,
-		    rewind:true
-		    // autowidth: true
-		});	
-    });
+			margin:10,
+			items:1,
+			autoplay:true,
+			autoplayTimeout:4000,
+			rewind:true
+			// autowidth: true
+		});
+  });
 
-	// Destroy Owl carousel on modal close
-	$("#pf-detail").on('hidden.bs.modal', function () {
-		$('.owl-carousel').trigger('destroy.owl.carousel').removeClass('owl-loaded');
-		$('.owl-carousel').find('.owl-stage-outer').children().unwrap();
+	$('#portfolio-item-carousel').owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 3
+			},
+			// 1000: {
+			// 	items: 5
+			// }
+		}
 	});
 
 	// Google Analytics
 	$("button#form_send").click(function(){
 		ga('send', 'event', 'form', 'submit');
 	});
-
-
 
 });

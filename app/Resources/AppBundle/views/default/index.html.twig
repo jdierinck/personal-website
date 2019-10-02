@@ -31,7 +31,7 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
 				</button>
 				<a href="#" class="navbar-brand"><strong>Johan Dierinck</strong></a>
 			</div>
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 	</nav>
-	<!-- Navigation end -->	
+	<!-- Navigation end -->
 
 	<!-- Profile start -->
 	<section id="profile">
@@ -60,7 +60,7 @@
 			<div class="row">
 				<div class="col-md-12 headline">
 					<h2>Johan Dierinck</h2>
-					<p>PHP developer. Symfony certified.</p>					
+					<p>PHP developer. Symfony certified.</p>
 				</div>
 				<div class="col-md-3 hidden-sm hidden-xs">
 					<img src="{{ asset('images/IMG_1350.jpg') }}" class="img-responsive img-circle" style="margin-bottom: 20px">
@@ -131,7 +131,7 @@
 					  </div>
 					</div>
 					<!-- end Modal -->
-				</div> <!-- /col-md-3 -->		
+				</div> <!-- /col-md-3 -->
 			</div> <!-- /row -->
 		</div> <!-- /container -->
 	</section>
@@ -164,13 +164,13 @@
 							<div class="service">
 								<div class="icon">
 									<i class="fa fa-code"></i>
-								</div>			
+								</div>
 								<h4 class="underline">{% trans %}Ontwikkeling{% endtrans %}</h4>
 								<ul class="list-unstyled">
 									<li>{% trans %}dynamische sites en applicaties (PHP){% endtrans %}</li>
 									<li>{% trans %}opzetten van content management systemen (CMS){% endtrans %}</li>
 									<li>{% trans %}ontwikkeling van modules voor CMS-systemen{% endtrans %}</li>
-									<li>{% trans %}responsive layouts{% endtrans %}</li>				
+									<li>{% trans %}responsive layouts{% endtrans %}</li>
 								</ul>
 							</div>
 						</div>
@@ -178,28 +178,28 @@
 							<div class="service">
 								<div class="icon">
 									<i class="fa fa-upload"></i>
-								</div>			
+								</div>
 								<h4 class="underline">{% trans %}Deployment{% endtrans %}</h4>
 								<ul class="list-unstyled">
 									<li>{% trans %}hosting{% endtrans %}</li>
 									<li>{% trans %}registratie van domeinnamen{% endtrans %}</li>
 									<li>{% trans %}configuratie van DNS-instellingen{% endtrans %}</li>
 								</ul>
-							</div>		
+							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="service">
 								<div class="icon">
 									<i class="fa fa-life-ring"></i>
-								</div>			
+								</div>
 								<h4 class="underline">{% trans %}Support{% endtrans %}</h4>
 								<ul class="list-unstyled">
 									<li>{% trans %}ondersteuning van gebruikers{% endtrans %}</li>
 									<li>{% trans %}updates van bestaande websites{% endtrans %}</li>
 									<li>{% trans %}troubleshooting{% endtrans %}</li>
 								</ul>
-							</div>			
-						</div>	
+							</div>
+						</div>
 					</div>
 				</div> <!-- /col-md-12 -->
 			</div> <!-- /row -->
@@ -241,7 +241,202 @@
 	</section>
 	<!-- Training section end -->
 
-	<!-- Projects section start -->
+<!-- Project section start -->
+<section id="projects" class="bg-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 headline">
+        <h2>Projecten</h2>
+        <p>Enkele voorbeeldprojecten</p>
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+					<div id="portfolio-item-carousel" class="owl-carousel owl-theme">
+
+						<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item4', 'view', 'Portfolio');">
+							<img src="images/citysites/citysites.png" class="img-responsive">
+							<div class="portfolio-item-description">
+								<h4>City Sites</h4>
+								<h5>2019</h5>
+								<div class="portfolio-item-description-detail" style="display: none;" data-tags="Drupal 8 Install profiles Module & theme development Migrate API MySQL">
+									<div id="portfolio-item-description-detail-carousel" class="owl-carousel owl-theme">
+										<div class="item">
+											<img src="images/citysites/citysites00001.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00002.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00003.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00004.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00005.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00006.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00007.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00008.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/citysites/citysites00009.png" class="img-responsive">
+										</div>
+									</div>
+									<p class="small">Voor Flow Pilots (Antwerpen) ontwikkelde ik een platform voor Vlaamse gemeentelijke overheden op basis van Drupal 8. Het CMS staat in voor het beheer van diensten en de producten (dienstverleningen) die gemeentebesturen aanbieden, raden en hun samenstelling, zittingen, agenda en beslissingen, en daarnaast ook vacatures en nieuws.</p>
+									<p>
+										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://demo.citysites.app" target="_blank">http://demo.citysites.app</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item5', 'view', 'Portfolio');">
+							<img src="images/ama/ama.png" class="img-responsive">
+							<div class="portfolio-item-description">
+								<h4>CMS Antwerp Museum App</h4>
+								<h5>2019</h5>
+								<div class="portfolio-item-description-detail" style="display: none;" data-tags="Drupal 8 Install profiles Module & theme development Migrate API MySQL">
+									<div id="portfolio-item-description-detail-carousel" class="owl-carousel owl-theme">
+										<div class="item">
+											<img src="images/ama/ama00001.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/ama/ama00002.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/ama/ama00003.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/ama/ama00004.png" class="img-responsive">
+										</div>
+									</div>
+									<p class="small">Voor Flow Pilots (Antwerpen) onderhield en verbeterde ik het CMS dat als backend fungeert voor de Antwerp Museum App. Het gaat om een 'headless' Drupal CMS dat instaat voor het beheer van musea, POI’s en tours, die via een custom JSON API aan de app aangeleverd worden.</p>
+									<p>
+										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://antwerpmuseumapp.com" target="_blank">http://antwerpmuseumapp.com</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item1', 'view', 'Portfolio');">
+							<img src="images/mealplanner/Mealplanner_home.png" class="img-responsive">
+							<div class="portfolio-item-description">
+								<h4>Mealplanner</h4>
+								<h5>2017</h5>
+								<div class="portfolio-item-description-detail" style="display: none;" data-tags="Symfony Twig Doctrine Javascript jQuery Bootstrap Ajax MySQL">
+									<div id="portfolio-item-description-detail-carousel" class="owl-carousel owl-theme">
+										<div class="item">
+											<img src="images/mealplanner/Mealplanner_home.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/mealplanner/Kookboek01.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/mealplanner/Kookboek.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/mealplanner/Menu.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/mealplanner/boodschappenlijst.png" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/mealplanner/Menu03.png" class="img-responsive">
+										</div>
+									</div>
+									<p class="small">Een webapplicatie op basis van het Symfony framework die gebruikers in staat stelt al hun recepten op een centrale plaats te beheren, recepten te importeren van tientallen — ook Nederlandstalige — sites, herbruikbare menu's aan te maken, en op basis van deze menu's boodschappenlijst te genereren, gerangschikt volgens afdeling.</p>
+									<p>
+										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://www.jdierinck.be/mealplanner" target="_blank">http://www.jdierinck.be/mealplanner</a>
+										<br>
+										<i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/jdierinck/mealplanner" target="_blank">Broncode</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item2', 'view', 'Portfolio');">
+							<img src="images/intranet/intranet-home.jpg" class="img-responsive">
+							<div class="portfolio-item-description">
+								<h4>Intranet</h4>
+								<h5>2012-2017</h4>
+								<div class="portfolio-item-description-detail" style="display: none;" data-tags="Drupal7 MySQL">
+									<div id="portfolio-item-description-detail-carousel" class="owl-carousel owl-theme">
+										<div class="item">
+											<img src="images/intranet/Intranet-nieuws.jpg" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/intranet/Intranet-create-dp.jpg" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/intranet/Intranet-dp-bijlage-reacties.jpg" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/intranet/Intranet-kalender.jpg" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/intranet/Intranet-documenten.jpg" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/intranet/Intranet-create-docp.jpg" class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/intranet/Intranet-create-docp2.jpg" class="img-responsive">
+										</div>
+									</div>
+									<p class="small">Een intranet voor de personeelsleden van het gemeentebestuur van Wemmel, oorspronkelijk gelanceerd in 2012 op basis van Open Atrium 1, een zogenaamde 'distributie' van Drupal met als doel samenwerking en communicatie in teams te bevorderen. In 2015 werd de site geüpgraded naar Open Atrium 2 en alle content gemigreerd. Een volgende update naar versie 2.60 begin 2016 heeft de gebruikerservaring aanzienlijk verbeterd. Medio 2016 werd de nieuwe huisstijl op de site toegepast.</p>
+									<p>
+										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://intranet.wemmel.be" target="_blank">http://intranet.wemmel.be</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item3', 'view', 'Portfolio');">
+							<img src="images/youthtube/YouthTube.jpg" class="img-responsive">
+							<div class="portfolio-item-description">
+								<h4>YouthTube</h4>
+								<h5>2013-2016</h5>
+								<div class="portfolio-item-description-detail" style="display: none;" data-tags="Symfony Twig Bootstrap MySQL">
+									<div id="portfolio-item-description-detail-carousel" class="owl-carousel owl-theme">
+										<div class="item" style="max-height: 400px;">
+											<img src="images/youthtube/YouthTube-home.jpg" class="img-responsive">
+										</div>
+										<div class="item" style="max-height: 400px;">
+											<img src="images/youthtube/YouthTube.jpg" class="img-responsive">
+										</div>
+										<div class="item" style="max-height: 400px;">
+											<img src="images/youthtube/YouthTube-activiteit.jpg" class="img-responsive">
+										</div>
+										<div class="item" style="max-height: 400px;">
+											<img src="images/youthtube/YouthTube-edit.jpg" class="img-responsive">
+										</div>
+									</div>
+									<p class="small">Een  tweetalige website voor de promotie van de Wemmelse Jongerendag, oorspronkelijk gelanceerd in 2013 en 'herbruikt' voor de edities van 2014, 2015 en 2016. In 2016 werd de site herwerkt binnen het Symfony framework en werd het design responsive gemaakt. Tevens werd de mogelijkheid voorzien voor de beheerders van de site zelf de content aan te passen.</p>
+									<p>
+										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://youthtube.wemmel.be" target="_blank">http://youthtube.wemmel.be</a>
+										<br>
+										<i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/jdierinck/youthtube" target="_blank">Broncode</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+</section><!-- Projects section end -->
+
+
+
+	{# <!-- Projects section start -->
 	<section id="projects" class="bg-grey">
 		<div class="container">
 			<div class="row">
@@ -255,7 +450,54 @@
 						<div class="col-sm-4">
 							<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item1', 'view', 'Portfolio');">
 								<div class="portfolio-item-preview">
-									<img src="images/mealplanner/Mealplanner.jpg" class="img-responsive">
+									<img src="images/citysites/citysites.png" class="img-responsive">
+								</div>
+								<div class="portfolio-item-description">
+									<h4>City Sites</h4>
+									<h5>2018</h5>
+									<div class="portfolio-item-description-detail" style="display: none;" data-tags="Drupal 8 Install profiles Module & theme development Migrate API MySQL">
+										<div id="portfolio-item-description-detail-carousel" class="owl-carousel owl-theme">
+											<div class="item">
+												<img src="images/citysites/citysites00001.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00002.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00003.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00004.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00005.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00006.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00007.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00008.png" class="img-responsive">
+											</div>
+											<div class="item">
+												<img src="images/citysites/citysites00009.png" class="img-responsive">
+											</div>
+										</div>
+										<p class="small">Een platform ontworpen voor Vlaamse gemeentelijke overheden op basis van Drupal 8. Het CMS staat in voor het beheer van diensten en de producten (dienstverleningen) die gemeentebesturen aanbieden, raden en hun samenstelling, zittingen, agenda en beslissingen, en daarnaast ook vacatures en nieuws.</p>
+										<p>
+											<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://demo.citysites.app" target="_blank">http://demo.citysites.app</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item1', 'view', 'Portfolio');">
+								<div class="portfolio-item-preview">
+									<img src="images/mealplanner/Mealplanner_home.png" class="img-responsive">
 								</div>
 								<div class="portfolio-item-description">
 									<h4>Mealplanner</h4>
@@ -270,7 +512,7 @@
 											</div>
 											<div class="item">
 												<img src="images/mealplanner/Kalender.jpg" class="img-responsive">
-											</div>										
+											</div>
 										</div>
 										<p class="small">Een webapplicatie op basis van het Symfony framework die gebruikers in staat stelt al hun recepten op een centrale plaats te beheren, recepten te importeren van tientallen — ook Nederlandstalige — sites, herbruikbare menu's aan te maken, en op basis van deze menu's boodschappenlijst te genereren, gerangschikt volgens afdeling.</p>
 										<p><i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://www.jdierinck.be/mealplanner" target="_blank">http://www.jdierinck.be/mealplanner</a>
@@ -289,7 +531,7 @@
 								</div>
 								<div class="portfolio-item-description">
 									<h4>Intranet</h4>
-									<h5>2012-heden</h4>
+									<h5>2012-2017</h4>
 									<div class="portfolio-item-description-detail" style="display: none;" data-tags="Drupal7 MySQL">
 										<div id="portfolio-item-description-detail-carousel" class="owl-carousel owl-theme">
 											<div class="item">
@@ -300,7 +542,7 @@
 											</div>
 											<div class="item">
 												<img src="images/intranet/Intranet-dp-bijlage-reacties.jpg" class="img-responsive">
-											</div>											
+											</div>
 											<div class="item">
 												<img src="images/intranet/Intranet-kalender.jpg" class="img-responsive">
 											</div>
@@ -312,15 +554,15 @@
 											</div>
 											<div class="item">
 												<img src="images/intranet/Intranet-create-docp2.jpg" class="img-responsive">
-											</div>											
-										</div>							
+											</div>
+										</div>
 										<p class="small">Een intranet voor de personeelsleden van het gemeentebestuur van Wemmel, oorspronkelijk gelanceerd in 2012 op basis van Open Atrium 1, een zogenaamde 'distributie' van Drupal met als doel samenwerking en communicatie in teams te bevorderen. In 2015 werd de site geüpgraded naar Open Atrium 2 en alle content gemigreerd. Een volgende update naar versie 2.60 begin 2016 heeft de gebruikerservaring aanzienlijk verbeterd. Medio 2016 werd de nieuwe huisstijl op de site toegepast.</p>
 										<p><i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://intranet.wemmel.be" target="_blank">http://intranet.wemmel.be</a></p>
 									</div>
 								</div>
 							</div>
 						</div>
-<!-- 
+<!--
 						<div class="col-md-3 col-sm-6">
 							<div class="portfolio-item">
 								<div class="portfolio-item-preview">
@@ -335,7 +577,7 @@
 									</div>
 								</div>
 							</div>
-						</div>	 -->					
+						</div>	 -->
 
 						<div class="col-sm-4">
 							<div class="portfolio-item" onclick="ga('send', 'event', 'portfolio-item3', 'view', 'Portfolio');">
@@ -359,8 +601,8 @@
 											<div class="item" style="max-height: 400px;">
 												<img src="images/youthtube/YouthTube-edit.jpg" class="img-responsive">
 											</div>
-										</div>									
-										<p class="small">Een  tweetalige website voor de promotie van de Wemmelse Jongerendag, oorspronkelijk gelanceerd in 2013 en 'herbruikt' voor de edities van 2014, 2015 en 2016. In 2016 werd de site herwerkt binnen het Symfony framework en werd het design responsive gemaakt. Tevens werd de mogelijkheid voorzien voor de beheerders van de site zelf de content aan te passen.</p> 
+										</div>
+										<p class="small">Een  tweetalige website voor de promotie van de Wemmelse Jongerendag, oorspronkelijk gelanceerd in 2013 en 'herbruikt' voor de edities van 2014, 2015 en 2016. In 2016 werd de site herwerkt binnen het Symfony framework en werd het design responsive gemaakt. Tevens werd de mogelijkheid voorzien voor de beheerders van de site zelf de content aan te passen.</p>
 										<p><i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://youthtube.wemmel.be" target="_blank">http://youthtube.wemmel.be</a>
 										<br>
 										<i class="fa fa-fw fa-github" aria-hidden="true"></i>&nbsp;<a href="https://github.com/jdierinck/youthtube" target="_blank">Broncode</a>
@@ -375,7 +617,7 @@
 			</div> <!-- /row -->
 		</div> <!-- /container -->
 	</section>
-	<!-- Projects section end -->
+	<!-- Projects section end --> #}
 
 					<!-- Modal -->
 					<div id="pf-detail" class="modal fade" role="dialog">
@@ -410,7 +652,7 @@
 							{{ flash_message|raw }}
 						</div>
 					{% endfor %}
-	  		
+
 			  		{{ form_start(form, {'attr':{'novalidate':'novalidate'}}) }}
 					{{ form_widget(form) }}
 					{{ form_end(form) }}
