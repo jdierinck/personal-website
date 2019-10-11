@@ -72,7 +72,7 @@
 					<br>
 					{% set CV = 'documents/CV_JDierinck_nl.pdf' %}
 					{% if app.request.locale == 'en' %}
-						{% set CV = 'documents/CV_Jdierinck_en.pdf' %}
+						{% set CV = 'documents/CV_JDierinck_en.pdf' %}
 					{% endif %}
 					<p><a href="{{ asset(CV) }}" class="btn btn-primary btn-md" onclick="ga('send', 'event', 'CV', 'download');"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;{% trans %}Download mijn CV{% endtrans %}</a></p>
 				</div>
