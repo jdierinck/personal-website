@@ -44,11 +44,11 @@
 					<li><a href="#projects">{% trans %}Projecten{% endtrans %}</a></li>
 					<li><a href="#contact">{% trans %}Contact{% endtrans %}</a></li>
 				</ul>
-<!-- 				<ul class="nav navbar-nav navbar-right">
+		 		<ul class="nav navbar-nav navbar-right">
 					<li {% if app.request.getLocale() == 'nl' %}class="lang-active"{% endif %}><a href="/nl">NL</a></li>
 					<li {% if app.request.getLocale() == 'en' %}class="lang-active"{% endif %}><a href="/en">EN</a></li>
-					<li {% if app.request.getLocale() == 'fr' %}class="lang-active"{% endif %}><a href="/fr">FR</a></li>
-				</ul> -->
+					{# <li {% if app.request.getLocale() == 'fr' %}class="lang-active"{% endif %}><a href="/fr">FR</a></li> #}
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -67,12 +67,14 @@
 					<!-- <p class= "small" style="font-style: italic;">INTJ. Autodidact. Beoefent aikido. Houdt van koken, Japanse tuinen, en goed bier.</p> -->
 				</div>
 				<div class="col-md-6 col-sm-6 margin">
-					<h3>Profiel</h3>
-					<p>Mijn naam is Johan Dierinck, ik ben freelance web developer gevestigd in België. Mijn voornaamste expertise bestaat in het ontwikkelen van websites en web applicaties in PHP, voornamelijk op basis van het Symfony framework en content management systemen of frameworks die er gebruik van maken, zoals bijvoorbeeld Drupal.</p>
-					<p>De snel evoluerende wereld van web development is de perfecte plaats om mijn aangeboren leergierigheid bot te vieren. Op de hoogte blijven van nieuwe praktijken en ontwikkelingen, je skillset uitbreiden, nieuwe tools en frameworks leren gebruiken... mijn dag is pas goed als ik iets nieuws geleerd heb.</p>
-					<p>Ik werk enkel met betrouwbare en open technologieën die de standaard zijn in de industrie en goede coding praktijken omarmen. Zo kunt u er zeker van zijn dat uw website of applicatie snel en stabiel werkt en ook in de toekomst makkelijk uitgebreid en onderhouden kan worden.</p>
+					<h3>{% trans %}Profiel{% endtrans %}</h3>
+					{% trans %}profieltekst{% endtrans %}
 					<br>
-					<p><a href="{{ asset('documents/CVJDierinck.pdf') }}" class="btn btn-primary btn-md" onclick="ga('send', 'event', 'CV', 'download');"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;{% trans %}Download mijn CV{% endtrans %}</a></p>
+					{% set CV = 'documents/CV_JDierinck_nl.pdf' %}
+					{% if app.request.locale == 'en' %}
+						{% set CV = 'documents/CV_Jdierinck_en.pdf' %}
+					{% endif %}
+					<p><a href="{{ asset(CV) }}" class="btn btn-primary btn-md" onclick="ga('send', 'event', 'CV', 'download');"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;{% trans %}Download mijn CV{% endtrans %}</a></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
 				{% set expertise = {
@@ -93,14 +95,14 @@
 						</div>
 					 {% endfor %}
 					</div>
-					<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" onclick="ga('send', 'event', 'expertise', 'view');">Volledig overzicht</button>
+					<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" onclick="ga('send', 'event', 'expertise', 'view');">{% trans %} Volledig overzicht{% endtrans %}</button>
 					<!-- Modal -->
 					<div id="myModal" class="modal fade" role="dialog">
 					  <div class="modal-dialog">
 					    <div class="modal-content">
 					      <div class="modal-header">
 					        <button type="button" class="close" data-dismiss="modal">&times;</button>
-					        <h4 class="modal-title">Mijn expertise</h4>
+					        <h4 class="modal-title">{% trans %}Mijn expertise{% endtrans %}</h4>
 					      </div>
 					      <div class="modal-body">
 					      	<h4>Back-end development</h4>
@@ -127,7 +129,7 @@
 									</ul>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Sluit</button>
+					        <button type="button" class="btn btn-default" data-dismiss="modal">{% trans %}Sluit{% endtrans %}</button>
 					      </div>
 					    </div>
 					  </div>
@@ -144,8 +146,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 headline">
-					<h2>Diensten</h2>
-					<p>Wat kan ik voor u doen?</p>
+					<h2>{% trans %}Diensten{% endtrans %}</h2>
+					<p>{% trans %}Wat kan ik voor u doen?{% endtrans %}</p>
 				</div>
 				<div class="col-md-12">
 					<div class="row">
@@ -220,21 +222,21 @@
 			</div> -->
 			<div class="row">
 				<div class="col-md-6 margin">
-				<h3>Certificaten</h3>
+				<h3>{% trans %}Certificaten{% endtrans %}</h3>
 					<ul class="list-unstyled">
-						<li>Symfony Certified Developer (Sensiolabs) · augustus 2016</li>
-						<li>Certified jQuery developer (W3Schools) · maart 2014</li>
-						<li>Certified JavaScript developer (W3Schools) · maart 2014</li>
-						<li>Certified PHP developer (W3Schools) · maart 2014</li>
+						<li>{% trans %}Symfony Certified Developer (Sensiolabs) · augustus 2016{% endtrans %}</li>
+						<li>{% trans %}Certified jQuery developer (W3Schools) · maart 2014{% endtrans %}</li>
+						<li>{% trans %}Certified JavaScript developer (W3Schools) · maart 2014{% endtrans %}</li>
+						<li>{% trans %}Certified PHP developer (W3Schools) · maart 2014{% endtrans %}</li>
 					</ul>
 				</div>
 				<div class="col-md-6">
-				<h3>Opleidingen</h3>
+				<h3>{% trans %}Opleidingen{% endtrans %}</h3>
 				<ul class="list-unstyled">
-					<li>PHP advanced (Syntra AB) · mei - juni 2015</li>
-					<li>Drupal developer (Syntra AB) · oktober 2013 - juni 2014</li>
-					<li>HTML5, CSS3 & the responsive web (Syntra West) · oktober 2013</li>
-					<li>Drupal advanced: fields & views (Syntra AB) · april 2013</li>
+					<li>{% trans %}PHP advanced (Syntra AB) · mei - juni 2015{% endtrans %}</li>
+					<li>{% trans %}Drupal developer (Syntra AB) · oktober 2013 - juni 2014{% endtrans %}</li>
+					<li>{% trans %}HTML5, CSS3 & the responsive web (Syntra West) · oktober 2013{% endtrans %}</li>
+					<li>{% trans %}Drupal advanced: fields & views (Syntra AB) · april 2013{% endtrans %}</li>
 				</ul>
 				</div>
 			</div> <!-- /row -->
@@ -248,8 +250,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 headline">
-        <h2>Projecten</h2>
-        <p>Enkele voorbeeldprojecten</p>
+        <h2>{% trans %}Projecten{% endtrans %}</h2>
+        <p>{% trans %}Enkele voorbeeldprojecten{% endtrans %}</p>
       </div>
       <div class="col-md-12">
         <div class="row">
@@ -290,7 +292,7 @@
 											<img src="images/citysites/citysites00009.png" class="img-responsive">
 										</div>
 									</div>
-									<p class="small">Voor Flow Pilots (Antwerpen) ontwikkelde ik een platform voor Vlaamse gemeentelijke overheden op basis van Drupal 8. Het CMS staat in voor het beheer van diensten en de producten (dienstverleningen) die gemeentebesturen aanbieden, raden en hun samenstelling, zittingen, agenda en beslissingen, en daarnaast ook vacatures en nieuws.</p>
+									<p class="small">{% trans %}projecten.citysites{% endtrans %}</p>
 									<p>
 										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://demo.citysites.app" target="_blank">http://demo.citysites.app</a>
 									</p>
@@ -318,7 +320,7 @@
 											<img src="images/ama/ama00004.png" class="img-responsive">
 										</div>
 									</div>
-									<p class="small">Voor Flow Pilots (Antwerpen) onderhield en verbeterde ik het CMS dat als backend fungeert voor de Antwerp Museum App. Het gaat om een 'headless' Drupal CMS dat instaat voor het beheer van musea, POI’s en tours, die via een custom JSON API aan de app aangeleverd worden.</p>
+									<p class="small">{% trans %}projecten.ama{% endtrans %}</p>
 									<p>
 										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://antwerpmuseumapp.com" target="_blank">http://antwerpmuseumapp.com</a>
 									</p>
@@ -352,7 +354,7 @@
 											<img src="images/mealplanner/Menu03.png" class="img-responsive">
 										</div>
 									</div>
-									<p class="small">Een webapplicatie op basis van het Symfony framework die gebruikers in staat stelt al hun recepten op een centrale plaats te beheren, recepten te importeren van tientallen — ook Nederlandstalige — sites, herbruikbare menu's aan te maken, en op basis van deze menu's boodschappenlijst te genereren, gerangschikt volgens afdeling.</p>
+									<p class="small">{% trans %}projecten.mealplanner{% endtrans %}</p>
 									<p>
 										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://www.mealplanner.cooking" target="_blank">http://www.mealplanner.cooking</a>
 										<br>
@@ -391,7 +393,7 @@
 											<img src="images/intranet/Intranet-create-docp2.jpg" class="img-responsive">
 										</div>
 									</div>
-									<p class="small">Een intranet voor de personeelsleden van het gemeentebestuur van Wemmel, oorspronkelijk gelanceerd in 2012 op basis van Open Atrium 1, een zogenaamde 'distributie' van Drupal met als doel samenwerking en communicatie in teams te bevorderen. In 2015 werd de site geüpgraded naar Open Atrium 2 en alle content gemigreerd. Een volgende update naar versie 2.60 begin 2016 heeft de gebruikerservaring aanzienlijk verbeterd. Medio 2016 werd de nieuwe huisstijl op de site toegepast.</p>
+									<p class="small">{% trans %}projecten.intranet{% endtrans %}</p>
 									<p>
 										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://intranet.wemmel.be" target="_blank">http://intranet.wemmel.be</a>
 									</p>
@@ -419,7 +421,7 @@
 											<img src="images/youthtube/YouthTube-edit.jpg" class="img-responsive">
 										</div>
 									</div>
-									<p class="small">Een  tweetalige website voor de promotie van de Wemmelse Jongerendag, oorspronkelijk gelanceerd in 2013 en 'herbruikt' voor de edities van 2014, 2015 en 2016. In 2016 werd de site herwerkt binnen het Symfony framework en werd het design responsive gemaakt. Tevens werd de mogelijkheid voorzien voor de beheerders van de site zelf de content aan te passen.</p>
+									<p class="small">{% trans %}projecten.youthtube{% endtrans %}</p>
 									<p>
 										<i class="fa fa-fw fa-globe" aria-hidden="true"></i>&nbsp;<a href="http://youthtube.wemmel.be" target="_blank">http://youthtube.wemmel.be</a>
 										<br>
@@ -632,7 +634,7 @@
 					      <div class="modal-body">
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Sluit</button>
+					        <button type="button" class="btn btn-default" data-dismiss="modal">{% trans %}Sluit{% endtrans %}</button>
 					      </div>
 					    </div>
 					  </div>
@@ -645,7 +647,7 @@
 			<div class="row">
 				<div class="col-md-12 headline">
 					<h2>Contact</h2>
-					<p>Ik hoor graag iets van u</p>
+					<p>{% trans %}Ik hoor graag iets van u{% endtrans %}</p>
 				</div>
 				<div class="col-md-6">
 					{% for flash_message in app.session.flashBag.get('notice') %}
@@ -660,7 +662,7 @@
 					{{ form_end(form) }}
 	  			</div>
 			  	<div class="col-md-6">
-					<p>Heeft u of uw bedrijf nood aan een (nieuwe) website, speelt u met een idee voor een web applicatie, of wil u tijdelijk een beroep doen op een web developer met expertise in de PHP wereld, aarzel dan niet om dit formulier in te vullen. Ik ben benieuwd wat ik voor u kan betekenen.</p>
+					{% trans %}contacttekst{% endtrans %}
 					<hr>
 			  		<ul class="icon-list">
 						<li><i class="fa fa-fw fa-map-marker"></i>2890 Sint-Amands, {% trans %}België{% endtrans %}</li>
@@ -685,7 +687,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p class="small">&copy {{ "now"|date("Y") }} Johan Dierinck, alle rechten voorbehouden</p>
+					<p class="small">&copy {{ "now"|date("Y") }} Johan Dierinck, {% trans %}alle rechten voorbehouden{% endtrans %}</p>
 				</div>
 			</div>
 		</div>

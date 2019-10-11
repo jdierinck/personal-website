@@ -1,20 +1,14 @@
-Over mij: About me
-Aanbod: Services
-Competenties: Skills
-Certificaten: Certificates
+Profiel: About me
+Diensten: Services
+Opleiding: Training
+Projecten: Projects
 Contact: Contact me
-'Voornaamste expertise: websites en applicaties op basis van PHP en afgeleide CMS-systemen en frameworks': 'Main expertise: websites and applications based on PHP and derived CMS systems and frameworks'
-Symfony 2.3 Advanced Certified Developer en liefhebber van het Symfony framework: Symfony 2.3 Advanced Certified Developer and enthusiast for the Symfony framework
-Vier jaar professionele ervaring met Drupal, vnl. intra- en extranetten: Four years of professional experience with intranets and extranets based on Drupal
-Bedreven in het verwerven van nieuwe vaardigheden door ervaring en zelfstudie: Eager to acquire new skills through experience and self-learning
-Gepassioneerd door webtechnologieën en het verwerven van nieuwe inzichten en kennis: Passionate about web technologies and gaining new insights and knowledge
-Gedreven en ambitieus om vooropgestelde doelstellingen te behalen: Highly motivated and ambitious to achieve set objectives
-Aangeboren neiging (afwijking?) om naar verbetering te streven: Natural tendency to continuously strive for improvement
+profieltekst: <p>I’m a freelance web developer focusing on backend technologies (PHP, MySQL, Doctrine…). I specialize in developing websites and web applications based on Symfony and other frameworks (e.g. Laravel) and content management systems (e.g. Drupal) that make use of Symfony’s components. While my focus is on the backend, I wouldn’t be able to call myself a <em>web developer</em> without a solid grasp of frontend tools like HTML, CSS, Sass, Javascript, jQuery, Bootstrap, templating…. Through professional experience (and curiosity, to be fair) I’ve also familiarized myself with Javascript frameworks like Angular and React.</p><p>The rapidly evolving world of web development is the perfect place to leverage my innate eagerness to learn. Keeping up with new practices and developments, enriching my skillset, learning to use new tools and frameworks... my day hasn’t been successful without having learnt something new.</p><p>I only work with reliable and open technologies that have become standard in the industry and embrace good coding practices. This way you can rest assured that your website runs fast and stable and will remain easy to maintain and update in the future.</p>
+Download mijn CV: Download my resume
+Volledig overzicht: Detailed view
+Mijn expertise: My expertise
+Sluit: Close
 Wat kan ik voor u doen?: How can I be of service to you?
-Concept: Concept
-bestek: specifications
-scenario's & wireframes: scenarios and wireframes
-planning & scope: planning & scope
 Ontwikkeling: Development
 dynamische sites en applicaties (PHP): dynamic websites and applications (PHP)
 opzetten van content management systemen (CMS): setup of content management systems (CMS)
@@ -27,10 +21,8 @@ Support: Support
 ondersteuning van gebruikers: end user support
 updates van bestaande websites: updates of existing sites
 troubleshooting: troubleshooting
-Competenties: Skills
-Volledig overzicht: Detailed view
-Verberg details: Hide details
-Opleidingen & certificaten: Training and certificates
+Certificaten: Certificates
+Opleidingen: Trainings
 Symfony Certified Developer (Sensiolabs) · augustus 2016: Symfony Certified Developer (Sensiolabs) · august 2016
 PHP advanced (Syntra AB) · mei - juni 2015: PHP advanced (Syntra AB) · mai - june 2015
 Certified jQuery developer (W3Schools) · maart 2014: Certified jQuery developer (W3Schools) · march 2014
@@ -38,13 +30,10 @@ Certified JavaScript developer (W3Schools) · maart 2014: Certified JavaScript d
 Certified PHP developer (W3Schools) · maart 2014: Certified PHP developer (W3Schools) · march 2014
 Drupal developer (Syntra AB) · oktober 2013 - juni 2014: Drupal developer (Syntra AB) · october 2013 - june 2014
 HTML5, CSS3 & the responsive web (Syntra West) · oktober 2013: HTML5, CSS3 & the responsive web (Syntra West) · october 2013
-'Drupal advanced: fields & views (Syntra AB) · april 2013': 'Drupal advanced: fields & views (Syntra AB) · april 2013'
-Download mijn CV: Download my résumé
-Contacteer mij: Contact me
-Adres: Address
-E-mail: E-mail
-GSM: Phone
-Web: Web
+Drupal advanced: fields & views (Syntra AB) · april 2013: Drupal advanced: fields & views (Syntra AB) · april 2013
+Enkele voorbeeldprojecten: Sample projects I've worked on
+Ik hoor graag iets van u: I'd like to hear from you
+contacttekst: <p>Do you or does your company need a (new) website, would you like to enhance an existing web application, or do you temporarily need a web developer skilled in PHP, do not hesitate to fill in this form. I'll be more than happy to hear from you.</p>
 form:
   contact:
     name: Name
@@ -53,5 +42,13 @@ form:
     message: Message
     send: Send
     honeypot: Leave this field blank
-'<strong>Bedankt!</strong> Ik neem zo snel mogelijk contact met je op.': "<strong>Thanks!</strong> I'll get back to you as soon as possible."
 België: Belgium
+alle rechten voorbehouden: all rights reserved
+
+'<strong>Bedankt!</strong> Ik neem zo snel mogelijk contact met je op.': "<strong>Thanks!</strong> I'll get back to you as soon as possible."
+
+projecten.citysites: For Flow Pilots (Antwerp) I developed a platform geared towards Flemish municipal governments based on Drupal 8. The CMS allows municipal employees to manage services and the products offered by their municipality, as well as councils and their composition, sessions, agenda and decisions, alongside job offerings and news items.
+projecten.ama: For Flow Pilots (Antwerp) I maintained and added new features to a 'headless' CMS based on Drupal 7 which serves as a backend for the Antwerp Museum App. Museums, tours and POIs are all managed from within the CMS, which delivers its data to the app by means of a custom JSON API.
+projecten.mealplanner: A web application built with the Symfony framework that allows users to administer all their personal recipes in one central repository, create reusable menus on the fly, and generate their grocery lists from these menus and/or from individual recipes, ordered by department.
+projecten.intranet: An intranet for the council employees of the municipality of Wemmel. The first version, launched in 2012, was based on Open Atrium 1, a Drupal 6 'distribution' aimed at improving collaboration and communication in teams. Apart from the built-in features, two custom features were developed (Telephone Book and Support Tickets). 2015 saw the upgrade to Open Atrium 2 and all content was migrated using a custom Migrate module. The upgrade to OA version 2.60 significantly improved the user experience. A new corporate design was introduced around the middle of 2016.
+projecten.youthtube: A bilingual (Dutch-French) website aimed at promoting the annual Youth Day in Wemmel, launched in 2013 and 'reused' for the 2014, 2015 and 2016 editions. Originally written in 'plain' PHP coupled with a MySQL database, the source code was refactored within the Symfony framework in 2016. On top of that, the site layout became responsive and site editors were given the ability to create and edit content.

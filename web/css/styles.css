@@ -143,6 +143,13 @@ Navbar
     color: #428bca;
 }
 
+.navbar-default .navbar-nav > .lang-active > a,
+.navbar-default .navbar-nav > .lang-active > a:hover,
+.navbar-default .navbar-nav > .lang-active > a:focus {
+    color: #428bca;
+    font-weight: bold;
+}
+
 .navbar-default .navbar-nav > li > a:focus, 
 .navbar-default .navbar-nav > li > a:hover {
     border-bottom: 3px solid #b3d9ff;
