@@ -44,6 +44,8 @@ form:
     honeypot: Leave this field blank
 België: Belgium
 alle rechten voorbehouden: all rights reserved
+Migratie CMS Antwerp Museum App naar Drupal 8: Migration CMS Antwerp Museum App to Drupal 8
+Laatste update: Last updated
 
 '<strong>Bedankt!</strong> Ik neem zo snel mogelijk contact met je op.': "<strong>Thanks!</strong> I'll get back to you as soon as possible."
 
@@ -52,3 +54,5 @@ projecten.ama: For Flow Pilots (Antwerp) I maintained and added new features to 
 projecten.mealplanner: A web application built with the Symfony framework that allows users to administer all their personal recipes in one central repository, create reusable menus on the fly, and generate their grocery lists from these menus and/or from individual recipes, ordered by department.
 projecten.intranet: An intranet for the council employees of the municipality of Wemmel. The first version, launched in 2012, was based on Open Atrium 1, a Drupal 6 'distribution' aimed at improving collaboration and communication in teams. Apart from the built-in features, two custom features were developed (Telephone Book and Support Tickets). 2015 saw the upgrade to Open Atrium 2 and all content was migrated using a custom Migrate module. The upgrade to OA version 2.60 significantly improved the user experience. A new corporate design was introduced around the middle of 2016.
 projecten.youthtube: A bilingual (Dutch-French) website aimed at promoting the annual Youth Day in Wemmel, launched in 2013 and 'reused' for the 2014, 2015 and 2016 editions. Originally written in 'plain' PHP coupled with a MySQL database, the source code was refactored within the Symfony framework in 2016. On top of that, the site layout became responsive and site editors were given the ability to create and edit content.
+projecten.ama-d8: Take 15.000 nodes spread across 27 content types, 28 custom modules counting 26.400 lines of code, and 33 GB of media files and port them to Drupal 8, that was the ambitious goal of this project for Flow Pilots, Antwerp.
+projecten.tartes: <br>A back-end for the new website of Belgian tart makers Les Tartes de Françoise based on Drupal 8. Thanks to the Paragraphs module editors are able to compose different types of complex pages by themselves. A separate front-end consumes data from het CMS via the JSON API.
