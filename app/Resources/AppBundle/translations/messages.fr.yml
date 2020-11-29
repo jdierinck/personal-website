@@ -53,6 +53,5 @@ form:
     subject: Sujet
     message: Message
     send: Envoyer
-    honeypot: Ce champ doit être vide
 '<strong>Bedankt!</strong> Ik neem zo snel mogelijk contact met je op.': '<strong>Merci pour votre message!</strong> Je vous contacte dans les plus brefs délais.'
 België: Belgique

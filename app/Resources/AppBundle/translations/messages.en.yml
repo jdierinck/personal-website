@@ -41,7 +41,6 @@ form:
     subject: Subject
     message: Message
     send: Send
-    honeypot: Leave this field blank
 België: Belgium
 alle rechten voorbehouden: all rights reserved
 Migratie CMS Antwerp Museum App naar Drupal 8: Migration CMS Antwerp Museum App to Drupal 8
