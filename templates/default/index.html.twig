@@ -70,10 +70,7 @@
 					<h3>{% trans %}Profiel{% endtrans %}</h3>
 					{% trans %}profieltekst{% endtrans %}
 					<br>
-					{% set CV = 'documents/CV_JDierinck_nl.pdf' %}
-					{% if app.request.locale == 'en' %}
-						{% set CV = 'documents/CV_JDierinck_en.pdf' %}
-					{% endif %}
+					{% set CV = 'documents/CV_JDierinck_en.pdf' %}
 					<p><a href="{{ asset(CV) }}" class="btn btn-primary btn-md" onclick="ga('send', 'event', 'CV', 'download');"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;{% trans %}Download mijn CV{% endtrans %}</a></p>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -742,7 +739,7 @@
 					<p class="small">&copy {{ "now"|date("Y") }} Johan Dierinck, {% trans %}alle rechten voorbehouden{% endtrans %}</p>
 				</div>
 				<div class="col-md-2">
-					<p class="small">{% trans %}Laatste update{% endtrans %}: 03/12/2020</p>
+					<p class="small">{% trans %}Laatste update{% endtrans %}: 26/10/2023</p>
 				</div>
 			</div>
 		</div>
